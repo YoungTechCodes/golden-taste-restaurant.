@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Golden Taste Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">
+        <span class="logo-icon">GT</span>
+        <span>GOLDEN TASTE<small>RESTAURANT</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <nav class="nav" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a class="active" href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section class="page-banner">
+        <p class="eyebrow">WE ARE HERE FOR YOU</p>
+        <h1>Contact Us</h1>
+        <p>Questions or orders? Get in touch with us.</p>
+    </section>
+
+    <section class="contact-layout section">
+        <div class="contact-details">
+            <p class="eyebrow">GET IN TOUCH</p>
+            <h2>We'd Love to Hear From You</h2>
+            <p><strong>Phone:</strong> +234 913 381 9307</p>
+            <p><strong>Location:</strong> Ilorin, Kwara State, Nigeria</p>
+            <p><strong>Email:</strong> goldentasterestaurany@gmail.com</p>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+            <label for="customerName">Your Name</label>
+            <input id="customerName" type="text" placeholder="Enter your name" required>
+
+            <label for="customerEmail">Your Email</label>
+            <input id="customerEmail" type="email" placeholder="Enter your email" required>
+
+            <label for="customerMessage">Your Message</label>
+            <textarea id="customerMessage" rows="5" placeholder="Write your message..." required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+            <p id="formMessage" aria-live="polite"></p>
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© <span class="year"></span> Golden Taste Restaurant. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

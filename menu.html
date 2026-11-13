@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Golden Taste Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">
+        <span class="logo-icon">GT</span>
+        <span>GOLDEN TASTE<small>RESTAURANT</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <nav class="nav" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section class="page-banner">
+        <p class="eyebrow">MADE WITH CARE</p>
+        <h1>Our Food Menu</h1>
+        <p>Discover something delicious today.</p>
+    </section>
+
+    <section class="section">
+        <div class="search-box">
+            <span>⌕</span>
+            <input type="search" id="menuSearch" placeholder="Search for food...">
+        </div>
+
+        <p id="noResults" class="no-results" hidden>No matching food found.</p>
+
+        <div class="food-grid" id="foodGrid">
+
+            <article class="food-card" data-food>
+                <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=700" alt="Jollof rice">
+                <div class="food-info">
+                    <h3>Jollof Rice</h3>
+                    <p>Delicious Nigerian-style rice.</p>
+                    <strong>₦3,500</strong>
+                    <button class="btn order-btn" data-item="Jollof Rice" data-price="3500">Order Now</button>
+                </div>
+            </article>
+
+            <article class="food-card" data-food>
+                <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=700" alt="Fried rice">
+                <div class="food-info">
+                    <h3>Fried Rice</h3>
+                    <p>Freshly prepared fried rice.</p>
+                    <strong>₦3,500</strong>
+                    <button class="btn order-btn" data-item="Fried Rice" data-price="3500">Order Now</button>
+                </div>
+            </article>
+
+            <article class="food-card" data-food>
+                <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=700" alt="Noodles">
+                <div class="food-info">
+                    <h3>Chicken Noodles</h3>
+                    <p>Tasty noodles with vegetables.</p>
+                    <strong>₦3,000</strong>
+                    <button class="btn order-btn" data-item="Chicken Noodles" data-price="3000">Order Now</button>
+                </div>
+            </article>
+
+            <article class="food-card" data-food>
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=700" alt="Grilled chicken">
+                <div class="food-info">
+                    <h3>Grilled Chicken</h3>
+                    <p>Well-seasoned grilled chicken.</p>
+                    <strong>₦5,000</strong>
+                    <button class="btn order-btn" data-item="Grilled Chicken" data-price="5000">Order Now</button>
+                </div>
+            </article>
+
+            <article class="food-card" data-food>
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=700" alt="Grilled meat">
+                <div class="food-info">
+                    <h3>Grilled Meat</h3>
+                    <p>Delicious grilled meat.</p>
+                    <strong>₦4,000</strong>
+                    <button class="btn order-btn" data-item="Grilled Meat" data-price="4000">Order Now</button>
+                </div>
+            </article>
+
+            <article class="food-card" data-food>
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=700" alt="Fresh salad">
+                <div class="food-info">
+                    <h3>Fresh Salad</h3>
+                    <p>A refreshing vegetable salad.</p>
+                    <strong>₦2,500</strong>
+                    <button class="btn order-btn" data-item="Fresh Salad" data-price="2500">Order Now</button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© <span class="year"></span> Golden Taste Restaurant. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
